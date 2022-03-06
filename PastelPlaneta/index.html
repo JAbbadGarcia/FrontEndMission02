@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pasteleria Planeta</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoplaneta.svg" alt="Logo" />
+      </div>
+      <div class="Navmenu">
+        <ul>
+          <li><a href="#Inicio">INICIO</a></li>
+          <li><a href="#Pauno">MENÚ</a></li>
+          <li><a href="#Patres">PEDIDOS</a></li>
+          <li><a href="administrador.html">ADMINISTRADOR</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="inicio" id="Inicio">
+        <h1>Pastelería Planeta</h1>
+        <h3>Es un placer servirte</h3>
+        <img src="img/Sweet cakepng.png" alt="">
+        <div class="contendorBotonOrdena">
+            <a href="#Pauno">ORDENAR AHORA</a>
+        </div>
+      </section>
+      <section class="menuPasteles" id="Pauno">
+        <h3>Nuestro menú<br>Selecciona tu pastel:</h3>
+        <div class="contenedorCards">
+            <div class="cardPastel">
+                <p>Vainilla <span>$150 mxn</span> </p>
+                <img src="img/vanillacake.png" alt="vainilla">
+                <input type = "radio" name = "paso1" value = "Vainilla" id="opc1" />
+            </div>
+            <div class="cardPastel">
+                <p>Chocolate <span>$200 mxn</span> </p>
+                <img src="img/sweet-chocolate-cake-with-cherry.jpg" alt="Chocolate">
+                <input type = "radio" name = "paso1" value = "Chocolate" id="opc2" />
+            </div>
+            <div class="cardPastel">
+                <p>Zanahoria <span>$170 mxn</span> </p>
+                <img src="img/carrotCake.png" alt="Zanahoria">
+                <input type = "radio" name = "paso1" value = "Zanahoria" id="opc3" />
+            </div>
+            <div class="cardPastel">
+                <p>Almendra <span>$350 mxn</span> </p>
+                <img src="img/AlmondCake.jpg" alt="Almendra">
+                <input type = "radio" name = "paso1" value = "Almendra" id="opc4" />
+            </div>
+            <div class="cardPastel">
+                <p>Mazapan <span>$250 mxn</span> </p>
+                <img src="img/MazapanCake.jpg" alt="Mazapan">
+                <input type = "radio" name = "paso1" value = "Mazapan" id="opc5" />
+            </div>
+            <div class="cardPastel">
+                <p>Mermelada <span>$300 mxn</span> </p>
+                <img src="img/cakeMermelada.png" alt="mermelada">
+                <input type = "radio" name = "paso1" value = "mermelada" id="opc6" />
+            </div>
+        </div>
+        <div class="pasoDosBtn">
+            <a href="#Pados">Complementos</a>
+        </div>
+      </section>
+      <section class="complementos" id="Pados">
+        <h3>Complementos<br>Selecciona tus complementos:</h3>
+        <div class="contenedorCards">
+            <div class="cardPastel imgcomplementos">
+                <p>Brownie <span>$25 mxn</span> </p>
+                <img src="img/trozosBrownie.jpg" alt="browinie" >
+                <input type = "checkbox" name = "paso2" value = "Zanahoria" id="check1" />
+            </div>
+            <div class="cardPastel imgcomplementos">
+                <p>Cheescake <span>$30 mxn</span> </p>
+                <img src="img/trozosCheescake.jpg" alt="cheescake" >
+                <input type = "checkbox" name = "paso2" value = "cheescake" id="check2" />
+            </div>
+            <div class="cardPastel imgcomplementos">
+                <p>Galleta <span>$15 mxn</span> </p>
+                <img src="img/trozosGalleta.jpg" alt="cheescake" >
+                <input type = "checkbox" name = "paso2" value = "Galleta" id="check3" />
+            </div>
+            <div class="cardPastel imgcomplementos">
+                <p>Mermelada <span>$15 mxn</span> </p>
+                <img src="img/fresaMermelada.jpg" alt="Mermelada" >
+                <input type = "checkbox" name = "paso2" value = "Mermelada" id="check4" />
+            </div>
+        </div>
+        <div class="pasoTresBtn"  >
+            <a href="#Patres">PASO TRES</a>
+        </div>
+      </section>
+      <section class="datosEnvio" id="Patres">
+          <h3>Datos pedido</h3>
+        <div class="contenedorForm">
+            <form action="#" method="post" class="formPersona">
+                <label for="Nombre">Nombre*:</label>
+                <br>
+                <input type="text" required="true" minlength="2" maxlength="45" id="Nombre">
+                <br>
+                <label for="Apellido">Apellido*:</label>
+                <br>
+                <input type="text" required="true" minlength="2" maxlength="45" id="Apellido">
+                <br>
+                <label for="Teléfono">Teléfono*:</label>
+                <br>
+                <input type="number" required="true" minlength="10" maxlength="12" id="Teléfono">
+                <br>
+                <label for="Email">Email:</label>
+                <br>
+                <input type="email" minlength="2" maxlength="60" id="Email">
+                <br>
+                <label for="Calle">Calle*:</label>
+                <br>
+                <input type="text" required="true" minlength="2" maxlength="60" id="Calle">
+                <br>
+                <label for="exterior">Número exterior*:</label>
+                <br>
+                <input type="text" required="true" minlength="2" maxlength="60" id="exterior">
+                <br>
+                <label for="interior">Número interior:</label>
+                <br>
+                <input type="text" minlength="2" maxlength="60" id="interior">
+                <br>
+                <label for="Notas">Notas:</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="5" id="Notas"></textarea>
+                <br>
+                <input type="submit" value="Enviar Orden">
+            </form>
+        </div>
+    </div>
+      </section>
+      <footer>
+        <div class="contenedorContacto"> 
+          <div class="datosContacto">
+            <h3>Contacto</h3>
+            <p><i class="fa-solid fa-location-dot"></i></i></i>Av Benito Juárez 50, Centro, 90000 Tlaxcala de Xicohténcatl, Tlax.</p>
+            <p><i class="fa-solid fa-envelope"></i></i>contacto@PasteleriaPlaneta.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+52 2112561235</p>
+          </div>
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+
+                <input type="text" required="true" minlength="2" maxlength="60" id="exterior" placeholder="Email....">
+                <input type="submit" value="Enviar">
+                <br>
+          </div>
+        </div>
+        <div class="copy"> 
+          <p> © Pasteleria Planeta. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

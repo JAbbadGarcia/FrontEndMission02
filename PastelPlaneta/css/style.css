@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Eczar', serif;
+    
+}
+html{
+    scroll-behavior: smooth;   
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Mobile*/
+
+/*header*/
+header{
+    width: 100vw;
+    height: 155px;
+    background-color: #314d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 2px;
+    
+}
+
+footer{
+    width: 100vw;
+}
+header,main,body,section,footer{
+    min-width: 360px;
+}
+.logo{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 230px;
+}
+.Navmenu{
+    overflow: hidden;
+}
+
+.Navmenu ul{
+    display: flex;
+    list-style: none;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+}
+.Navmenu li{
+ margin: 4px;
+}
+
+.Navmenu a{
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+.Navmenu a:hover{
+    color: #DBA77C;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #314d4d;
+}
+/*paso1*/
+.inicio{
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    background-color: #DBA77C;
+}
+.inicio h1, .complementos h3{
+    color: #243B3B;
+}
+.inicio h3 {
+    color: #406666;
+}
+.inicio img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.contendorBotonOrdena a{
+    background-color: #243B3B;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*menu pasteles*/
+.menuPasteles, .complementos{
+    width: 100vw;
+    height: auto;
+    background-color: #243B3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.menuPasteles h3{
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedorCards{
+    width: 100%;
+    overflow: hidden;
+}
+.cardPastel{
+    width: 230px;
+    height: 230px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgb(56, 83, 83);
+    
+}
+.cardPastel p{
+    color: #243B3B;
+}
+.cardPastel p span{
+    color: #502400;
+}
+input[type=radio] {
+    margin-top: 10px;
+    border: 10px;
+    width: 20%;
+    height: 30px;
+ 
+}
+.cardPastel img{
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.contendorBotonOrdena{
+    margin-top: 30px;
+    height: 120px;
+}
+.contendorBotonOrdena a{
+    background-color: #243B3B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contendorBotonOrdena a:hover{
+    cursor: pointer;
+}
+.contendorBotonOrdena a:active,a:hover{
+    background-color: #244141;
+}
+
+/*paso 2 complementos*/
+
+.complementos{
+    text-align: center;
+    background-color: #fff;
+}
+
+.complementos .imgcomplementos{
+    background-color: #fafafa;
+}
+.complementos .imgcomplementos img{
+    border-radius: 40px;
+}
+input[type=checkbox] {
+    margin-top: 20px;
+    border: 10px;
+    width: 20%;
+    height: 30px;
+}
+
+.pasoDosBtn{
+    margin-top: 30px;
+    height: 120px;
+}
+.pasoDosBtn a{
+    background-color: #fff;
+    color: #243B3B;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pasoDosBtn a:hover{
+    cursor: pointer;
+}
+.pasoDosBtn a:hover{
+    background-color: #f0f0f0;
+}
+
+.pasoTresBtn{
+    margin-top: 30px;
+    height: 120px;
+}
+.pasoTresBtn a{
+    background-color: #243B3B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pasoTresBtn a:hover{
+    cursor: pointer;
+}
+.pasoTresBtn a:hover{
+    background-color: #244141;
+}
+
+.contenedorForm{
+    width: 90%;
+    max-width: 768px;
+    background-color: #385d5d;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contenedorForm textarea{
+    width: 98%;
+    
+}
+.contenedorForm input{
+    color: #385d5d;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+.datosEnvio{
+    padding-top: 60px;
+    background-color: #243B3B;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.formPersona input[type=submit]{
+    text-align: center;
+    background-color: #ffff;
+    color: #2e5252;
+    font-size: 25px;
+    padding: 0 15px;
+    border-radius: 10px;
+  
+}
+.formPersona input{
+    border-radius: 10px;
+    padding-left: 8px;
+    color: #345d5d;
+    width: 300px;
+    margin: 0 auto;
+    width: 98%;
+    max-width: 700px;
+}
+.datosEnvio h3{
+    color: #fff;
+    margin-bottom: 30px;
+   
+}
+
+.formPersona label{
+    color: #ffff;
+}
+.contenedorContacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #2C3333;
+    margin-top: -.6px;
+}
+
+.contenedorContacto h3{
+    color: #f0f0f0;
+    font-size: 25px;
+}
+.contenedorContacto p{
+    color: #fafafa;
+    display: inline-block;
+    width: 95%;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 auto;
+}
+.datosContacto input{
+    color: #345d5d;
+    padding: 5px;
+    border-radius: 10px;
+}
+.datosContacto input[type=submit]:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contenedorContacto .fa-location-dot,.fa-envelope,.fa-square-phone{
+    padding-right: 5px;
+}
+
+.copy{
+    background-color: #2e5252;
+    color: #f0f0f0;
+    text-align: center;
+    margin-top: -.6px;
+    padding: 20px;
+}
+/*end mobile*/
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+    .Navmenu ul{
+        display: flex;
+        list-style: none;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .Navmenu li{
+     margin: 15px;
+    }
+
+    .logo img{
+        width: 270px;
+    }
+    .inicio h1{
+        font-size: 50px;
+    }
+    .inicio h3{
+        font-size: 35px;
+    }
+    .inicio img{
+        width: 280px;
+    }
+    .contendorBotonOrdena a{
+        font-size: 25px;
+    }
+    .menuPasteles h3{
+        font-size: 30px;
+    }
+    input[type=radio] {
+        margin-top: 10px;
+        border: 10px;
+        width: 20%;
+        height: 40px;
+    }
+    
+    .cardPastel{
+        width: 260px;
+        height: 260px;
+        overflow: hidden;
+    }
+    .cardPastel img{
+        width: 180px;
+        height: 151px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+    .cardPastel{
+        font-size: 25px;
+    }
+    .pasoDosBtn{
+        margin-top: 30px;
+        height: 120px;
+        font-size: 25px;
+    }
+    .contenedorCards{
+        width: 100vw;
+        height: auto;
+        margin: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .complementos{
+        background-color: #fff;
+    }
+    .pasoTresBtn{
+        margin-top: 30px;
+        height: 120px;
+        font-size: 25px;
+    }
+    .datosEnvio h3{
+        font-size: 30px;
+    }
+
+    .contenedorForm label{
+        font-size: 25px;
+    }
+    .contenedorCards{
+        padding: 0 25px 0 25px;
+    }
+    .contenedorContacto p{
+        color: #fafafa;
+        display: inline-block;
+        width: 95%;
+        font-size: 20px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .newsletter input{
+        color: #345d5d;
+        padding: 5px;
+        border-radius: 10px;  
+    }
+    .newsletter input[type=submit]{
+        width: 30%;
+        font-size: 18px;
+    }
+    .newsletter input[type=text]{
+        width: 60%;
+    }
+    .newsletter input[type=submit]:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+  }
+  /*End*/
+  
+  /*Desktop*/
+
+  @media only screen and (min-width: 1024px) {
+    header{
+        width: 100vw;
+        height: 155px;
+        background-color: #314d4d;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 25%;
+        height: 120px;
+        justify-content: left;
+    }
+    .logo img{
+        width: 280px;
+    }
+    .Navmenu{
+        overflow: hidden;
+    }
+    .Navmenu ul{
+        margin: 0 20px;
+    }
+    .Navmenu li{
+     margin: 4px 10px;
+     padding: 5px;
+     background-color: #DBA77C;
+     border-radius: 10px;
+    }
+    
+    .Navmenu a{
+        color: #406666;
+        border-radius: 10px;
+        margin: 0 30px;
+    }
+    .Navmenu a:hover{
+        color: #406666;
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: #DBA77C;
+    }
+    .cardPastel{
+        width: 300px;
+        height: 300px;
+        font-size: 27px;
+    }
+    .complementos h3,.menuPasteles h3, .datosEnvio h3{
+        font-size: 40px;
+    }
+    
+    .contenedorContacto{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        align-content: center;
+    }
+    .contenedorContacto h3{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .contenedorContacto p{
+        display: inline-block;
+    }
+
+    .newsletter h3{
+      text-align: left;
+      margin-left: 5px;
+    }
+    .newsletter input[type=submit]{
+        width: 15%;
+        font-size: 18px;
+    }
+    .newsletter input[type=text]{
+        width: 82%;
+    }
+    .newsletter{
+        flex-wrap: wrap;
+    }
+    .complementos,.inicio,.menuPasteles{
+        min-height: 100vh;
+    }
+    .inicio img{
+        margin-top: 100px;
+        width: 450px;
+    }
+    .contenedorCards{
+        padding-top: 70px;
+    }
+
+    .pasoTresBtn,.pasoDosBtn,.contendorBotonOrdena{
+        margin-top: 100px;
+        font-size: 35px;
+    }
+    
+  }
